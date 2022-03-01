@@ -21,20 +21,12 @@
                 </div>
             </nav>
             <div class="d-grid gap-2">
-              <button class="btn btn-success" type="button" onclick="push()">Notificacion Push-up</button>
+              <button class="btn btn-success" type="button" onclick="pushup()">Notificacion Push-up</button>
               <button class="btn btn-success" type="button" disabled>Acceso Directo</button>
             </div>
             <script>
-              function push(){
-              Push.create("Hello world!", {
-              body: "How's it hangin'?",
-              icon: '/icon.png',
-              timeout: 4000,
-              nClick: function () {
-              window.focus();
-              this.close();
-              }
-              });
+              function pushup(){
+              Push.create('Hola mundo')
               }
 
             </script>
